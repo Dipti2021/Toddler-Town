@@ -11,7 +11,7 @@ Daycare.init(
       primaryKey: true,
       autoIncrement: true,
     },
-    Name: {
+    Day_Care: {
       type: DataTypes.STRING,
       allowNull: false,
     },
@@ -20,7 +20,7 @@ Daycare.init(
       allowNull: false,
     },
     Phone_Number: {
-      type: DataTypes.INTEGER,
+      type: DataTypes.STRING,
       allowNull: true,
     },
 
@@ -37,12 +37,13 @@ Daycare.init(
       allowNull: false,
     },
     Address: {
-      type: DataTypes.DATE,
+      type: DataTypes.STRING,
       allowNull: false,
     },
   },
   {
     sequelize,
+    timestamps: false,
     freezeTableName: true,
     underscored: true,
     modelName: 'Daycare',

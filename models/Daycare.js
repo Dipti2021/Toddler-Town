@@ -37,12 +37,13 @@ Daycare.init(
       allowNull: false,
     },
     Address: {
-      type: DataTypes.DATE,
+      type: DataTypes.STRING,//Changed the add
       allowNull: false,
     },
   },
   {
     sequelize,
+    timestamps: false,
     freezeTableName: true,
     underscored: true,
     modelName: 'Daycare',

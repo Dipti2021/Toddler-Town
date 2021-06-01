@@ -1,0 +1,16 @@
+<section class="container">
+  <h3 class="daycare-name">{{daycare.name}}</h3>
+  <h4>Don't know where to look for a Day Care??</h4>
+  <h3>YOR SEARCH ENDS HERE</h3>
+  <!-- If the user is logged in, render the gallery content -->
+  {{#if loggedIn}}
+  <section class="flex-row justify-center">
+    {#each gallery.paintings as |painting|}}  <!-- dont know how to do it -->
+    {{> painting-details}}
+    {{/each}}
+  </section>-->
+</section>
+<!-- Otherwise, provide a link to login -->
+{{else}}
+<a href="/login">Login to end your search</a>
+{{/if}}

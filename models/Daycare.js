@@ -37,7 +37,7 @@ Daycare.init(
       allowNull: false,
     },
     Address: {
-      type: DataTypes.STRING,
+      type: DataTypes.STRING,//Changed the add
       allowNull: false,
     },
   },

@@ -5,7 +5,6 @@ const { Comment } = require('../../models');
 const sequelize = require('../../config/connection');
 // Users shouldn't post or update comments if they are not loggedIn
 const withAuth = require('../../utils/auth');
-
 // When a post/:id is viewed, make sure to include/display all its related comments
 router.get('/', (req, res) => {
     Comment.findAll({})
@@ -15,7 +14,6 @@ router.get('/', (req, res) => {
             res.status(500).json(err);
         })
 });
-
 // Click into a specific comment
 router.get('/:id', (req, res) => {
     Comment.findAll({
@@ -29,7 +27,6 @@ router.get('/:id', (req, res) => {
             res.status(500).json(err);
         })
 });
-
 // When a loggedIn user posts a comment, store text, post and user ids
 router.post('/', withAuth, (req, res) => {
     if (req.session) {
@@ -46,7 +43,6 @@ router.post('/', withAuth, (req, res) => {
             })
     }
 });
-
 // If a user wants to update a comment, they must be logged in
 router.put('/:id', withAuth, (req, res) => {
     Comment.update({
@@ -66,7 +62,6 @@ router.put('/:id', withAuth, (req, res) => {
         res.status(500).json(err);
     });
 });
-
 // To delete a comment, click on button associated with the comment id
 router.delete('/:id', withAuth, (req, res) => {
     Comment.destroy({
@@ -84,5 +79,4 @@ router.delete('/:id', withAuth, (req, res) => {
         res.status(500).json(err);
     });
 });
-
 module.exports = router;

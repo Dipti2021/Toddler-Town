@@ -6,7 +6,6 @@ const { Post, User, Comment } = require('../../models');
 const sequelize = require('../../config/connection');
 // import our loggedIn authenticator since users can't post unless in
 const withAuth = require('../../utils/auth');
-
 // when a post is added, find all it's content and post it in reverse
 router.get('/', (req, res) => {
     console.log('======================');
@@ -39,7 +38,6 @@ router.get('/', (req, res) => {
             res.status(500).json(err);
         });
 });
-
 // when a user clicks on a specific post, return all that data
 router.get('/:id', (req, res) => {
     Post.findOne({
@@ -77,7 +75,6 @@ router.get('/:id', (req, res) => {
             res.status(500).json(err);
         });
 });
-
 // After user submits a new post, connect user session then get above
 router.post('/', withAuth, (req, res) => {
     // creates a new Post model instance and calls save on it
@@ -92,7 +89,6 @@ router.post('/', withAuth, (req, res) => {
             res.status(500).json(err);
         });
 });
-
 // when user clicks 'update' button, replace post-id data with new
 router.put('/:id', withAuth, (req, res) => {
 // Update multiple instances that match the where options
@@ -117,7 +113,6 @@ router.put('/:id', withAuth, (req, res) => {
             res.status(500).json(err);
         });
 });
-
 // when user clicks 'delete' button, remove record from database entirely
 router.delete('/:id', withAuth, (req, res) => {
 // Delete multiple instances, in this case just where the id has been selected. On a post/:id page, clicking the delete button will trigger the front end form that will ship a delete request back here
@@ -136,5 +131,4 @@ router.delete('/:id', withAuth, (req, res) => {
         res.status(500).json(err);
     });
 });
-
 module.exports = router;

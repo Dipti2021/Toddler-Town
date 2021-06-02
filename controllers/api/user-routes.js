@@ -12,7 +12,6 @@ router.post('/', async (req, res) => {
 
     req.session.save(() => {
       req.session.loggedIn = true;
-
       res.status(200).json(dbUserData);
     });
   } catch (err) {
@@ -20,7 +19,6 @@ router.post('/', async (req, res) => {
     res.status(500).json(err);
   }
 });
-
 // Login
 router.post('/login', async (req, res) => {
   try {
@@ -29,7 +27,6 @@ router.post('/login', async (req, res) => {
         email: req.body.email,
       },
     });
-
     if (!dbUserData) {
       res
         .status(400)
@@ -37,21 +34,20 @@ router.post('/login', async (req, res) => {
       return;
     }
 
-    const validPassword = await dbUserData.checkPassword(req.body.password);
 
+
+    console.log('emails match');
+    const validPassword = await dbUserData.checkPassword(req.body.password);
     if (!validPassword) {
       res
         .status(400)
         .json({ message: 'Incorrect email or password. Please try again!' });
       return;
     }
-
     req.session.save(() => {
         req.session.user_id = dbUserData.id;
         req.session.username = dbUserData.username;
         req.session.loggedIn = true;  
-      
-
       res
         .status(200)
         .json({ user: dbUserData, message: 'You are now logged in!' });
@@ -61,7 +57,6 @@ router.post('/login', async (req, res) => {
     res.status(500).json(err);
   }
 });
-
 // Logout
 router.post('/logout', (req, res) => {
   if (req.session.loggedIn) {
@@ -72,5 +67,4 @@ router.post('/logout', (req, res) => {
     res.status(404).end();
   }
 });
-
 module.exports = router;

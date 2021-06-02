@@ -20,7 +20,7 @@ Daycare.init(
       allowNull: false,
     },
     Phone_Number: {
-      type: DataTypes.INTEGER,
+      type: DataTypes.STRING,
       allowNull: true,
     },
 

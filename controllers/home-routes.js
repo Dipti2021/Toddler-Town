@@ -1,7 +1,8 @@
+const router = require('express').Router();
+const { Daycare, Review } = require('../models');
+const Agegroup = require('../models/Agegroup');
+const withAuth = require('../utils/auth');
 
-const router = require("express").Router();
-const { Daycare, Review } = require("../models");
-const withAuth = require("../utils/auth");
 // GET all galleries for homepage
 router.get("/", async (req, res) => {
   try {
@@ -28,8 +29,9 @@ router.get("/daycare/:city", withAuth, async (req, res) => {
   try {
     const dbDaycareData = await Daycare.findAll({
       where: {
-        city: req.params.city,
+        City: req.params.city,
       },
+      include:[Agegroup]
     });
     const daycares = dbDaycareData.map((daycare) =>
       daycare.get({ plain: true })

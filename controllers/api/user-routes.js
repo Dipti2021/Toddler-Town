@@ -1,5 +1,6 @@
 const router = require('express').Router();
 const { User } = require('../../models');
+
 // CREATE new user
 router.post('/', async (req, res) => {
   try {
@@ -31,6 +32,7 @@ router.post('/login', async (req, res) => {
         .json({ message: 'Incorrect email or password. Please try again!' });
       return;
     }
+    console.log('emails match');
     const validPassword = await dbUserData.checkPassword(req.body.password);
     if (!validPassword) {
       res

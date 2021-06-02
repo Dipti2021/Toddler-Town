@@ -12,9 +12,8 @@ const helpers = require('./utils/helpers');
 const app = express();
 const PORT = process.env.PORT || 3001;
 
-// Sets up session and connect to our Sequelize db
 const sess = {
-  secret: 'Super secret secret',
+  secret: process.env.SECRET,
   // Tells our session to use cookies
   cookie: {},
   resave: false,
@@ -26,7 +25,6 @@ const sess = {
 };
 
 app.use(session(sess));
-
 const hbs = exphbs.create({ helpers });
 
 app.engine('handlebars', hbs.engine);

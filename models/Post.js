@@ -21,8 +21,11 @@ Post.init(
     },
     user_id: {
       type: DataTypes.INTEGER,
-      allowNull: true,
-    },
+      type: DataTypes.INTEGER,
+      references: {// added for reference as a foreign key
+        model: 'user',
+        key: 'id'
+      }
   },
   {
     sequelize,

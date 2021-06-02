@@ -17,6 +17,7 @@
     min-height: 100vh;
     justify-content: flex-start;
     background-color: var(--quatrinary);
+    
   }
   
   a {
@@ -66,7 +67,7 @@
     background-color: var(--dark);
   }
   
-  .gallery {
+  .daycare {
     flex: 4;
     background-color: #fff;
     padding: 50px;
@@ -162,4 +163,24 @@
     align-content: flex-start;
     align-items: center;
   }
+  
+  table{
+       border: 2px solid;       
+  }
+  thead {
+   display:flex;
+	 width:100%;
+	 background:rgb(223, 213, 213);
+   
+    }
+  
+  tr{
+    display:flex;
+   	width:100%;
+    }
+  td ,th {
+    flex: 1 1 20%;
+	  text-align:center;
+      }
+
   

@@ -2,7 +2,7 @@ const router = require('express').Router();
 const { Daycare, Review } = require('../models');
 const withAuth = require('../utils/auth');
 const Agegroup = require('../models/Agegroup');
-const withAuth = require('../utils/auth');
+
 
 
 // GET all galleries for homepage
@@ -73,8 +73,6 @@ router.get('/signup', (req, res) => {
   res.render('signup');
 });
 
-
-});
 router.get("/daycare/:city", withAuth, async (req, res) => {
   try {
     const dbDaycareData = await Daycare.findAll({

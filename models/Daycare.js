@@ -11,7 +11,7 @@ Daycare.init(
       primaryKey: true,
       autoIncrement: true,
     },
-    Day_Care: {
+    Name: {
       type: DataTypes.STRING,
       allowNull: false,
     },

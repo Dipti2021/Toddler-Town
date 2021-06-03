@@ -411,6 +411,98 @@ const daycareData = [
   Phone_Number: "4034753176",
   Email:"support@rockabyedaycare.ca",
   Details:"https://www.wecaredaycare.ca/" //weblink
+},
+// edmonton daycares
+{
+  Name: "Kids 'R' Us",
+  Age_Group:"Toddler",// remove or add,Schoolage, infant
+  City: 'Edmonton',
+  Address:"Vanguard college, 12140 103 St NW, Edmonton, AB T5G 2J9",
+  Phone_Number: "7804715437",
+  Email:"kidsrus2@ymail.com",
+  Details:"https://www.kidsruschildcarecenter.ca/" //weblink
+},
+{
+  Name: "Kepler Academy Early Learning and Child Care",
+  Age_Group:"PreSchool",// remove or add,Schoolage, infant
+  City: 'Edmonton',
+  Address:"16826 107 Ave NW #104, Edmonton, AB T5P 4C3",
+  Phone_Number: "7807009427",
+  Email:"na@example.com",
+  Details:"https://www.kepleracademy.ca/" //weblink
+},
+
+{
+  Name: "World Of Kids Daycare",
+  Age_Group:"PreSchool",// remove or add,Schoolage, infant
+  City: 'Edmonton',
+  Address:"10616 36A Ave NW, Edmonton, AB T6J 0C9",
+  Phone_Number: "7804366760",
+  Email:"admin@worldofkidsdaycare.com",
+  Details:"https://worldofkidsdaycare.com/" //weblink
+},
+{
+  Name: "Summerside Child Care",
+  Age_Group:"School Age",// remove or add,Schoolage, infant
+  City: 'Edmonton',
+  Address:"1109 Summerside Dr SW, Edmonton, AB T6X 0H5",
+  Phone_Number: "7804904558",
+  Email:" summersidechildcarecenter@gmail.com",
+  Details:"http://www.summersidechildcare.com/" //weblink
+},
+{
+  Name: "Edmonton NW Daycare",
+  Age_Group:"infants",// remove or add,Schoolage, infant
+  City: 'Edmonton',
+  Address:"12823 116 Ave NW, Edmonton, AB T5M 3C8",
+  Phone_Number: "7804546353",
+  Email:"na@example.com",
+  Details:"http://www.godaycare.com/" //weblink
+},
+{
+  Name: "South Side Edmonton Educational Daycare",
+  Age_Group:"PreSchool",// remove or add,Schoolage, infant
+  City: 'Edmonton',
+  Address:"2825 Mill Woods Rd NW, Edmonton, AB T6K 4A9",
+  Phone_Number: "7802244905",
+  Email:"info@educationaldaycare.ca",
+  Details:"https://www.educationaldaycare.ca/millwoods/" //weblink
+},
+{
+  Name: "Global Aware Care Summerside Early Learning Centre",
+  Age_Group:"PreSchool",// remove or add,Schoolage, infant
+  City: 'Edmonton',
+  Address:"109, 1103 95 Street SW, Edmonton, AB T6X 0P8",
+  Phone_Number: "5875686910",
+  Email:"info@globalawarecare.com",
+  Details:"https://globalawarecare.com/" //weblink
+},
+{
+  Name: "Early Learning Childcare",
+  Age_Group:"School Age",// remove or add,Schoolage, infant
+  City: 'Edmonton',
+  Address:"10305 100 Ave NW #104, Edmonton, AB T5J 3C8",
+  Phone_Number: "7807187371",
+  Email:"office@earlylearningchildcare.ca",
+  Details:"http://www.earlylearningchildcare.ca/" //weblink
+},
+{
+  Name: "First Step Daycare and Afterschool",
+  Age_Group:"School Age",// remove or add,Schoolage, infant
+  City: 'Edmonton',
+  Address:"1 Building 7, 9810 137 Ave NW #101, Edmonton, AB T5E 4H5",
+  Phone_Number: "7802493310",
+  Email:"downtown@fstepsaycare.ca",
+  Details:"hhttp://www.fstepdaycare.ca/" //weblink
+},
+{
+  Name: "Little Flowers Daycare, Preschool & OSC",
+  Age_Group:"PreSchool",// remove or add,Schoolage, infant
+  City: 'Edmonton',
+  Address:"2304 38 St NW, Edmonton, AB T6L 4K9",
+  Phone_Number: "7804616330",
+  Email:"info@littleflowers-daycare.com",
+  Details:"https://littleflowers-daycare.com/" //weblink
 }
     
 ];

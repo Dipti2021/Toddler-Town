@@ -35,6 +35,15 @@
     background: var(--primary);
     color: var(--light);
   }
+
+  /* form,div 
+  { //formatted the login and signup
+    margin-bottom: 2%;
+  } */
+  
+  form label {
+    display: block;
+  }
   
   main {
     display: flex;

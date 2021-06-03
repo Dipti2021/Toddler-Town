@@ -16,7 +16,7 @@ async function newFormHandler(event) {
     });
 
     if (response.ok) {
-        document.location.replace('/home');
+        document.location.replace('/review');
     } else {
         alert(response.statusText);
     }

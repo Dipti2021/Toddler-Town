@@ -18,6 +18,7 @@
     <nav class="navbar mt-2">
             {{#if loggedIn}}
             <a href="/" class="navbar-item is-hoverable pt-1">Home</a> 
+            <a href="/review" class="navbar-item is-hoverable pt-1">Review</a> 
             <button id="logout" class="button is-danger">Logout</button>
             {{else}}
             <a href="/" class="navbar-item is-hoverable pt-1">Home</a>
@@ -36,7 +37,7 @@
       <h2>The Name</h2>
       <h2>We got it all!</h2>
     </aside>
-    <div class="daycare">
+    <div class="display">
       {{{body}}}
     </div>
   </main>

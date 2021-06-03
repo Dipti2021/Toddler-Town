@@ -1,8 +1,11 @@
+<div class="daycare">
 {{#each cities as |city|}}
-<section class="card">
+<section class="card" id ="card">
   <a href="/daycare/{{city.city}}">
-    <header>{{city.city}}</header>
+    <header id="title">{{city.city}}</header>
     <img src="/images/{{city.city}}.jpg" alt="{{city.city}}">
   </a>
 </section>
 {{/each}}
+
+</div>

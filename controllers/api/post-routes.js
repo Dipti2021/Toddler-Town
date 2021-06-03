@@ -55,7 +55,7 @@ router.get('/:id', (req, res) => {
                 },
                 {
                     model: Comment,
-                    attributes: ['id', 'comment_text', 'post_id', 'user_id', 'created_at'],
+                    attributes: ['id', 'comment_text', 'post_id', 'user_id', 'comment_date'],
                     include: {
                         model: User,
                         attributes: ['username']
@@ -80,7 +80,7 @@ router.post('/', withAuth, (req, res) => {
     // creates a new Post model instance and calls save on it
     Post.create({
             title: req.body.title,
-            content: req.body.content,
+            post_content: req.body.post_content,
             user_id: req.session.user_id
         })
         .then(dbPostData => res.json(dbPostData))
@@ -95,7 +95,7 @@ router.put('/:id', withAuth, (req, res) => {
     Post.update({
 // hash of values to update
             title: req.body.title,
-            content: req.body.content
+            post_content: req.body.post_content
         }, {
 // options to be met within the where attribute
             where: {

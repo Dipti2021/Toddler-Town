@@ -67,14 +67,20 @@
     background-color: var(--dark);
   }
   
-  .daycare {
+  .display {
     flex: 4;
     background-color: #fff;
     padding: 50px;
-    display: flex;
-    flex-flow: row wrap;
     justify-content: center;
     align-items: center;
+    
+  }
+  .daycare {
+    flex: 4;
+    padding: 50px;
+    display: flex;
+    flex-flow: row wrap;
+    
   }
   
   .btn-no-style {
@@ -107,6 +113,7 @@
   }
   
   /* CARDS */
+ 
   .card {
     margin: 20px;
     flex: 0 1 300px;
@@ -114,8 +121,8 @@
     border-radius: 10px;
     background-color: var(--light);
     color: var(--dark);
-  }
-  
+}
+   
   .login-card {
     margin: 0 0 20px 0;
     flex: 0 0 50%;
@@ -129,7 +136,15 @@
     color: var(--light);
   }
   
-  .card header {
+ 
+  
+  .card-body {
+    font-size: 1.4rem;
+    text-align: center;
+    font-weight: bold;
+  }
+   
+   .card-header {
     color: var(--light);
     font-weight: bold;
     text-transform: uppercase;
@@ -138,13 +153,6 @@
     padding: 0.625rem;
     border-radius: calc(0.18rem - 1px) calc(0.18rem - 1px) 0 0;
   }
-  
-  .card-body {
-    font-size: 1.4rem;
-    text-align: center;
-    font-weight: bold;
-  }
-  
   .gallery-name {
     text-transform: uppercase;
     letter-spacing: 3px;
@@ -183,4 +191,36 @@
 	  text-align:center;
       }
 
-  
+      .post .title span {
+        font-style: italic;
+        font-size: 90%;
+        color: #7d7d7d;
+      }
+      
+      .edit-link {
+        display: block;
+        margin: -1.5% 0 2% 0;
+      }
+      
+      .comment-form {
+        margin-bottom: 5%;
+      }
+      
+      .comment {
+        padding: 1%;
+        margin-bottom: 1%;
+      }
+      
+      .comment:nth-child(odd) {
+        background-color: #fff5eb;
+      }
+      
+      .comment .meta {
+        font-size: 90%;
+        margin-bottom: .5%;
+        opacity: .6;
+      }
+      
+      .edit-post-form {
+        margin-bottom: 5%;
+      }

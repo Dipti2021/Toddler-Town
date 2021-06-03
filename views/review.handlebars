@@ -1,0 +1,19 @@
+    <div class="mb-5 pt-3">
+        <a href="/review/create/"><button id="create-post" class="button is-primary is-pulled-right">create post</button></a>
+        
+        <h2 class="title pb-4">Website Reviews</h2><hr>
+{{#if reviews.length}}
+    
+
+    {{#each reviews as |review|}}
+        {{> review-details review}}
+        
+            <a href="/review/edit/{{review.id}}"><button class="button mb-5 ml-5 is-warning">edit post</button></a>
+        
+    {{/each}}
+
+{{else}}
+<h6 class="pb-4 has-text-centered is-italic">There is no posts</h6>
+
+{{/if}}
+</div>

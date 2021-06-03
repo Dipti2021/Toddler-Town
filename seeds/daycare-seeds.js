@@ -12,7 +12,7 @@ const daycareData = [
   },
   {
     Name: "Wee Watch Licensed Child care Agency",
-    Age_Group:"Toddler",// remove or add
+    Age_Group:"PreSchool",// remove or add
     City: 'Ottawa',
     Address: "808 Clearbrook Dr, Nepean, ON K2J 0H5",
     Phone_Number:"6134820526",
@@ -39,7 +39,7 @@ const daycareData = [
   },
   {
     Name: "Devonshire School Age Program",
-    Age_Group:"Toddler",// remove or add
+    Age_Group:"School Age",// remove or add
     City: 'Ottawa',
     Address: "100 Breezehill Ave N, Ottawa, ON K1Y 2H5",
     Phone_Number:"6137226969",
@@ -48,7 +48,7 @@ const daycareData = [
   },
   {
     Name: "Andrew Fleck Children’s Services",
-    Age_Group:"Toddler",// remove or add
+    Age_Group:"School Age",// remove or add
     City: 'Ottawa',
     Address: "Andrew Fleck Children’s Services",
     Phone_Number:"6137365355",
@@ -75,7 +75,7 @@ const daycareData = [
   },
   {
     Name: "Amana's Home Daycare for Teachers",
-    Age_Group:"Toddler",// remove or add
+    Age_Group:"School Age",// remove or add
     City: 'Ottawa',
     Address: "Picasso Drive, Ottawa, ON, CA",
     Phone_Number:"6135586626",
@@ -84,7 +84,7 @@ const daycareData = [
   },
   {
     Name: "Child Care Providers Resource Network",
-    Age_Group:"Toddler",// remove or add
+    Age_Group:"Infants",// remove or add
     City: 'Ottawa',
     Address: "30 Colonnade Rd N, Nepean, ON K2E 7J6",
     Phone_Number:"6137495211",
@@ -112,7 +112,7 @@ const daycareData = [
   },
   {
     Name: "West End Parents Daycare",
-    Age_Group:"Toddler",// remove or add
+    Age_Group:"PreSchool",// remove or add
     City: 'Toronto',
     Address: "375 Dovercourt Rd, Toronto, ON M6J 3E5",
     Phone_Number:"4165346761",
@@ -121,7 +121,7 @@ const daycareData = [
   },
   {
     Name: "Childspace Daycare",
-    Age_Group:"Toddler",// remove or add
+    Age_Group:"PreSchool",// remove or add
     City: 'Toronto',
     Address: "690 Carlaw Ave, Toronto, ON M4K 3K7",
     Phone_Number:" 4164690560",
@@ -139,7 +139,7 @@ const daycareData = [
   },
   {
     Name: "Unicorn Day Care Centre (Toronto) Inc",
-    Age_Group:"Toddler",// remove or add
+    Age_Group:"Infants",// remove or add
     City: 'Toronto',
     Address: "454 Avenue Road, Toronto, ON M4V 2J1",
     Phone_Number:"4169296841",
@@ -148,7 +148,7 @@ const daycareData = [
   },
   {
     Name: "Queen's Park Child Care",
-    Age_Group:"Toddler",// remove or add
+    Age_Group:"School Age",// remove or add
     City: 'Toronto',
     Address: "7 Queen's Park Cres E, Toronto, ON M7A 1Y7",
     Phone_Number:"4169729979",
@@ -167,7 +167,7 @@ const daycareData = [
 
   {
     Name: "Sunnyside Day Care - Roncesvalles",
-    Age_Group:"Toddler",// remove or add,Schoolage, infant
+    Age_Group:"PreSchool",// remove or add,Schoolage, infant
     City: 'Toronto',
     Address: "10 High Park Blvd, Toronto, ON M6R 1M4",
     Phone_Number:"4165389654",
@@ -186,7 +186,7 @@ const daycareData = [
   //FROM MONTREAL
   {
     Name: "Centre éducatif Sunflower Child Care Centre",
-    Age_Group:"Toddler",// remove or add,Schoolage, infant
+    Age_Group:"infants",// remove or add,Schoolage, infant
     City: 'Montreal',
     Address:"700 Montreal Rd, Ottawa, ON K1A 0P7",
     Phone_Number: "6137482268",
@@ -204,7 +204,7 @@ const daycareData = [
   },
   {
     Name: "Happy Kidz Daycare",
-    Age_Group:"Toddler",// remove or add,Schoolage, infant
+    Age_Group:"School Age",// remove or add,Schoolage, infant
     City: 'Montreal',
     Address:"905 Avenue Ogilvy, Montréal, QC H3N 1P2",
     Phone_Number: "5144958640",
@@ -213,7 +213,7 @@ const daycareData = [
   },
   {
     Name: "Garderie Rainbow",
-    Age_Group:"Toddler",// remove or add,Schoolage, infant
+    Age_Group:"PreSchool",// remove or add,Schoolage, infant
     City: 'Montreal',
     Address:"2005 Rue Saint-Jacques, Montréal, QC H3J 1H3",
     Phone_Number: "5145592600",
@@ -231,7 +231,7 @@ const daycareData = [
   },
   {
     Name: "Cote Des Neiges Day Care Ctr",
-    Age_Group:"Toddler",// remove or add,Schoolage, infant
+    Age_Group:"infants",// remove or add,Schoolage, infant
     City: 'Montreal',
     Address:"4810 Ave Van Horne, Montreal, Quebec H3W 1J3",
     Phone_Number: "5147331397",
@@ -249,7 +249,7 @@ const daycareData = [
   },
   {
     Name: "Sima Home Daycare",
-    Age_Group:"Toddler",// remove or add,Schoolage, infant
+    Age_Group:"School Age",// remove or add,Schoolage, infant
     City: 'Montreal',
     Address:"5175 Prince of Wales Ave, Montreal, Quebec H4V 2N2",
     Phone_Number: "5146998373",
@@ -267,7 +267,7 @@ const daycareData = [
   },
   {
     Name: "Garderie Le Nid De Namur",
-    Age_Group:"Toddler",// remove or add,Schoolage, infant
+    Age_Group:"infants",// remove or add,Schoolage, infant
     City: 'Montreal',
     Address:" 4987 Pare St, Montreal, Quebec H4P 1P4",
     Phone_Number: "5147393999",
@@ -278,7 +278,7 @@ const daycareData = [
   //daycares in vancouver
   {
     Name: "Sunset Child Care Society",
-    Age_Group:"Toddler",// remove or add,Schoolage, infant
+    Age_Group:"PreSchool",// remove or add,Schoolage, infant
     City: 'Vancouver',
     Address:" 8064 Buscombe St, Vancouver, BC V5X 3S1",
     Phone_Number: "6043253817",
@@ -287,7 +287,7 @@ const daycareData = [
   },
   {
     Name: "West Point Grey Daycare",
-    Age_Group:"Toddler",// remove or add,Schoolage, infant
+    Age_Group:"PreSchool",// remove or add,Schoolage, infant
     City: 'Vancouver',
     Address:" 1708 W 16th Ave, Vancouver, BC V6J 2M1",
     Phone_Number: "6045689002",
@@ -305,7 +305,7 @@ const daycareData = [
   },
   {
   Name: "Bright Beginning Childcare Center vancouver",
-  Age_Group:"Toddler",// remove or add,Schoolage, infant
+  Age_Group:"infants",// remove or add,Schoolage, infant
   City: 'Vancouver',
   Address:" 266 E 55th Ave, Vancouver, BC V5X 1M9",
   Phone_Number: "7783788470",
@@ -314,14 +314,13 @@ const daycareData = [
 },
 {
   Name: "Appu Child Care- Vancouver Daycarer",
-  Age_Group:"Toddler",// remove or add,Schoolage, infant
+  Age_Group:"School Age",// remove or add,Schoolage, infant
   City: 'Vancouver',
   Address:" 616 E 48th Ave, Vancouver, BC V5W 2E6",
   Phone_Number: "6043227433",
   Email:"appuchildcare@gmail.com",
   Details:"http://www.appuchildcare.com/" //weblink
 },
-
 {
   Name: "Little Munchkin Daycare",
   Age_Group:"infant",// remove or add,Schoolage, infant
@@ -331,14 +330,87 @@ const daycareData = [
   Email:"info@littlemunchkindaycare.ca",
   Details:"https://www.komelsdaycare.com/" //weblink
 },
+//Calgary day cares
 {
-  Name: "Little Munchkin Daycare",
+  Name: "Calgary Childcare Centre",
   Age_Group:"infant",// remove or add,Schoolage, infant
-  City: 'Vancouver',
-  Address:"1319 W 52nd Ave, Vancouver, BC V6P 1L1",
-  Phone_Number: " 6046551895",
-  Email:"info@littlemunchkindaycare.ca",
-  Details:"https://www.komelsdaycare.com/" //weblink
+  City: 'Calgary',
+  Address:"830 1 Ave NE #201, Calgary, AB T2E 0C3",
+  Phone_Number: " 5877166030",
+  Email:"info@calgarychildcarecentre.com",
+  Details:"https://www.calgarychildcarecentre.com/" //weblink
+},
+{
+  Name: "Little Stars Daycare and Preschool",
+  Age_Group:"PreSchool",// remove or add,Schoolage, infant
+  City: 'Calgary',
+  Address:"3730 Westwinds Drive Northeast #100th, Calgary, AB T3J 5H3",
+  Phone_Number: " 4034577787",
+  Email:"iinfo@littlestarscalgary.com",
+  Details:"https://littlestarscalgary.com/" //weblink
+},
+{
+  Name: "Bow Valley Child Care Centre",
+  Age_Group:"School Age",// remove or add,Schoolage, infant
+  City: 'Calgary',
+  Address:"255 5 Ave SW #320, Calgary, AB T2P 3G6",
+  Phone_Number: "4032691719",
+  Email:"bvccc@telus.net",
+  Details:"https://www.bvccc.ca/" //weblink
+},
+{
+  Name: "BrightPath Whitehorn",
+  Age_Group:"infant",// remove or add,Schoolage, infant
+  City: 'Calgary',
+  Address:"3704 Whitehorn Dr NE, Calgary, AB T1Y 5C4",
+  Phone_Number: "4032854533",
+  Email:"na@example.com",
+  Details:"https://brightpathkids.com/locations/whitehorn/" //weblink
+},
+{
+  Name: "Chapter1 Daycare and Preschool",
+  Age_Group:"PreSchool",// remove or add,Schoolage, infant
+  City: 'Calgary',
+  Address:"197 1 St SW Unit 128, Calgary, AB T2P 4M4",
+  Phone_Number: "4037759236",
+  Email:"info@chapter1daycare.com",
+  Details:"https://chapter1daycare.com/" //weblink
+},
+{
+  Name: "Kids U - Bridgeland",
+  Age_Group:"Toddler",// remove or add,Schoolage, infant
+  City: 'Calgary',
+  Address:" 985 McPherson Rd NE, Calgary, AB T2E 4H7",
+  Phone_Number: "4034579810",
+  Email:"na@example.com",
+  Details:"https://www.kidsu.ca/bridgeland/?utm_source=GMB_Bridgeland&utm_medium=Organic" //weblink
+},
+{
+  Name: "BrightPath McKenzie Towne",
+  Age_Group:"Toddler",// remove or add,Schoolage, infant
+  City: 'Calgary',
+  Address:"97 McKenzie Towne Blvd SE, Calgary, AB T2Z 3S7",
+  Phone_Number: "4037263156",
+  Email:"info@example.com",
+  Details:"https://brightpathkids.com/locations/mckenzie-towne/" //weblink
+},
+{
+  Name: "2000 Days Daycare",
+  Age_Group:"infants",// remove or add,Schoolage, infant
+  City: 'Calgary',
+  Address:" 5728 1 St SW, Calgary, AB T2H 0E2",
+  Phone_Number: "4033192332",
+  Email:"admin@2000days.net",
+  Details:"https://2000daysdaycare.ca/?utm_source=Google&utm_medium=GMB" //weblink
+},
+{
+  Name: "Rockabye Daycare",
+  Age_Group:"Toddler",// remove or add,Schoolage, infant
+  City: 'Calgary',
+  Address:"1204 Renfrew Dr NE, Calgary, AB T2E 5J5",
+  Phone_Number: "4034753176",
+  Email:"support@rockabyedaycare.ca",
+  Details:"https://www.wecaredaycare.ca/" //weblink
 }
     
 ];

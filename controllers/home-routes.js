@@ -75,7 +75,7 @@ router.get('/signup', (req, res) => {
 });
 
 // removed withAuth
-router.get("/daycare/:city", async (req, res) => {
+router.get("/daycare/:city", withAuth, async (req, res) => {
   try {
     const dbDaycareData = await Daycare.findAll({
       where: {
@@ -111,3 +111,4 @@ router.get("/signup", (req, res) => {
   res.render("signup");
 });
 module.exports = router;
+

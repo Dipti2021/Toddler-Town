@@ -233,3 +233,23 @@
       .edit-post-form {
         margin-bottom: 5%;
       }
+      table {
+        font-family: arial, sans-serif;
+        border-collapse: collapse;
+        width: 100%;
+      }
+      
+      td, th {
+        border: 1px solid #dddddd;
+        text-align: left;
+        padding: 10px;
+        
+      }
+      
+      tr:nth-child(even) {
+        background-color: #dddddd;
+      }
+
+      td a {
+        word-break: break-word;
+      }

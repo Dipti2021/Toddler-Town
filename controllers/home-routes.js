@@ -17,7 +17,7 @@ router.get("/", async (req, res) => {
         citiesArr.map((item) => [JSON.stringify(item), item])
       ).values(),
     ];
-    console.log(cities);
+    console.log("cities", cities);
     res.render("homepage", {
       cities,
       loggedIn: req.session.loggedIn,
@@ -29,29 +29,30 @@ router.get("/", async (req, res) => {
 });
 
 
-router.get('/daycare/:city', withAuth, async (req, res) => {
-  try {
-    const dbDaycareData = await Daycare.findAll({
+// router.get('/daycare/:city', withAuth, async (req, res) => {
+//   try {
+//     console.log(req.params.city)
+//     const dbDaycareData = await Daycare.findAll({
 
-      where: {
-        city:req.params.city
-      },
+//       where: {
+//         city: req.params.city
+//       },
       
-    });
+//     });
    
-         const daycares = dbDaycareData.map((daycare) =>
-          daycare.get({ plain: true })
-        );
-        console.log(daycares)
-        res.render('daycare', {
-          daycares,
-          loggedIn: true,
-        });
-  } catch (err) {
-    console.log(err);
-    res.status(500).json(err);
-  }
-});
+//     const daycares = dbDaycareData.map((daycare) =>
+//       daycare.get({ plain: true })
+//     );
+//     console.log("daycares", daycares)
+//     res.render('daycare', {
+//       daycares,
+//       // loggedIn: true,
+//     });
+//   } catch (err) {
+//     console.log(err);
+//     res.status(500).json(err);
+//   }
+// });
 
 
 
@@ -73,7 +74,8 @@ router.get('/signup', (req, res) => {
   res.render('signup');
 });
 
-router.get("/daycare/:city", withAuth, async (req, res) => {
+// removed withAuth
+router.get("/daycare/:city", async (req, res) => {
   try {
     const dbDaycareData = await Daycare.findAll({
       where: {
@@ -84,7 +86,7 @@ router.get("/daycare/:city", withAuth, async (req, res) => {
     const daycares = dbDaycareData.map((daycare) =>
       daycare.get({ plain: true })
     );
-    console.log(daycares);
+    console.log("daycares", daycares);
     res.render("daycare", {
       daycares,
       loggedIn: true,

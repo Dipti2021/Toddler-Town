@@ -28,33 +28,6 @@ router.get("/", async (req, res) => {
   }
 });
 
-
-router.get('/daycare/:city', withAuth, async (req, res) => {
-  try {
-    const dbDaycareData = await Daycare.findAll({
-
-      where: {
-        city:req.params.city
-      },
-      
-    });
-   
-         const daycares = dbDaycareData.map((daycare) =>
-          daycare.get({ plain: true })
-        );
-        console.log(daycares)
-        res.render('daycare', {
-          daycares,
-          loggedIn: true,
-        });
-  } catch (err) {
-    console.log(err);
-    res.status(500).json(err);
-  }
-});
-
-
-
 router.get('/login', (req, res) => {
   if (req.session.loggedIn) {
     res.redirect('/');

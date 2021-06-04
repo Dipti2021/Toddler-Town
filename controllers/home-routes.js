@@ -17,7 +17,7 @@ router.get("/", async (req, res) => {
         citiesArr.map((item) => [JSON.stringify(item), item])
       ).values(),
     ];
-    console.log(cities);
+    console.log("cities", cities);
     res.render("homepage", {
       cities,
       loggedIn: req.session.loggedIn,
@@ -46,6 +46,7 @@ router.get('/signup', (req, res) => {
   res.render('signup');
 });
 
+// removed withAuth
 router.get("/daycare/:city", withAuth, async (req, res) => {
   try {
     const dbDaycareData = await Daycare.findAll({
@@ -57,7 +58,7 @@ router.get("/daycare/:city", withAuth, async (req, res) => {
     const daycares = dbDaycareData.map((daycare) =>
       daycare.get({ plain: true })
     );
-    console.log(daycares);
+    console.log("daycares", daycares);
     res.render("daycare", {
       daycares,
       loggedIn: true,
@@ -82,3 +83,4 @@ router.get("/signup", (req, res) => {
   res.render("signup");
 });
 module.exports = router;
+

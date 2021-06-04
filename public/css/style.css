@@ -6,19 +6,40 @@
     --light: #e3e4e3;
     --dark: #182c23;
     --error: rgb(228, 46, 1);
-    --border-radius: 0.3rem;
+    --border-radius: 2px;
   }
   
   body {
-    font-family: Arial;
+    font-family: cursive;
     margin: 0;
     display: flex;
     flex-direction: column;
-    min-height: 100vh;
     justify-content: flex-start;
     background-color: var(--quatrinary);
     
   }
+  .wrapper{
+    
+    border: 2px dashed black;
+    padding: 145px;
+    background: url("https://images.unsplash.com/photo-1530103862676-de8c9debad1d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=750&q=80") no-repeat center center fixed; 
+   -webkit-background-size: cover;
+   -moz-background-size: cover;
+   -o-background-size: cover;
+   background-size: cover;
+  }
+  
+ h1, h3{
+    color: black;
+  }
+
+  h1{
+    font-size: 75px;
+  }
+  h3{
+    font-size: 35px;
+  }
+
   
   a {
     color: var(--dark);
@@ -30,16 +51,16 @@
   }
   
   header {
-    padding: 40px;
+    padding: 70px;
     text-align: center;
-    background: var(--primary);
-    color: var(--light);
+   
+   
   }
 
-  /* form,div 
-  { //formatted the login and signup
+  form,div 
+  { 
     margin-bottom: 2%;
-  } */
+  } 
   
   form label {
     display: block;
@@ -61,7 +82,7 @@
   
   nav {
     display: flex;
-    background-color: var(--secondary);
+    
   }
   
   nav a {
@@ -108,18 +129,6 @@
     height: auto;
   }
   
-  .painting {
-    width: 50%;
-    background-color: white;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    margin-bottom: 25px;
-  }
-  
-  .painting-details {
-    text-align: center;
-    padding: 10px 20px;
-    font-weight: bold;
-  }
   
   /* CARDS */
  
@@ -162,16 +171,7 @@
     padding: 0.625rem;
     border-radius: calc(0.18rem - 1px) calc(0.18rem - 1px) 0 0;
   }
-  .gallery-name {
-    text-transform: uppercase;
-    letter-spacing: 3px;
-    text-shadow: 2px 2px 5px var(--secondary);
-    border: 10px groove var(--light);
-    padding-top: 30px;
-    padding-bottom: 30px;
-    padding-right: 100px;
-    padding-left: 100px;
-  }
+ 
   
   /* LAYOUT */
   .container {

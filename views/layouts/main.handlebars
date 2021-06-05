@@ -25,6 +25,7 @@
             <a href="/" class="navbar-item is-hoverable pt-1"><i class="fas fa-home"></i> Home</a> 
             <a href="/review" class="navbar-item is-hoverable pt-1"><i class="fas fa-comments"></i> Review</a> 
             <button id="logout" class="button is-danger"><i class="fas fa-sign-out-alt"></i> Logout</button>
+            <p><strong>Logged in by you on {{format_date "2021-06-05 14:00:00 +07:00" format="yyyy-MM-dd HH:mm:ss Z"  tz="America/Denver"}}
             {{else}}
             <a href="/" class="button is-primary"><i class="fas fa-home"></i> Home</a>
             <a href="/login" class="button is-primary"><i class="fas fa-sign-in-alt"></i> Login</a>

@@ -11,8 +11,6 @@
  
 ## User Stories
 
-
-
  * As a user, I want to see a list of available daycares in my city(cities around canada).
  * As a user, I want to be able to create an account.
  * As a registered user, when i'm logged in, i want to be able to see a list of daycares in my city, post and edit post.
@@ -23,59 +21,59 @@
 
 * It is done when the `/daycare/:id` route renders all daycares associated with a city based on the route parameter id.
 
-
-
 * It's done when the `/login` route renders a form to log in and a form to create a new account.
-
-
 
 * It's done when an existing user can enter their credentials on the login page to create a session on the server.
 
-
-
 * It's done when a new user can create an account on the login page and then be immediately logged in with a session.
-
-
 
 * It's done when the views are rendered with Handlebars.js templates.
 
-
-
 * It's done when a logged-in user can select a "Logout" button to remove their session.
 
-
-
 * It's done when a user can comment, edit post and leave reviews 
-
 
 
 ## Specifications
 * The database models have the following fields and assocociations: 
 
+db schema : `/images/db schema toddle town.jpg`
     * `User`
 
         * `id`: primary key
-
         * `name`
-
         * `email`
-
         * `password`
-
 
     * `Daycare`
         * `id` : primary key
-
         * `Name`     
-
         * `Age_Group`
-
         * `Phone_number`
-
         * `Email`
-
         * `Details`
 
+## Files Layout
+
+* config  / connections.js : 
+
+* controllers / api / comment-routes.js, daycare-routes.js, index.js, post-routes.js, home-routes.js, review-routes.js
+
+* db / schema.sql
+
+* models / Agegroup.js, Comment.js, Daycare.js, index.js, Post.js, User.js
+
+* public/ css / jass.css, style.css
+* public / images 
+* public / js / add-post.js, comment.js, create-post.js, delete-post.js, edit-post.js, login.js, logout.js, signup.js
+
+* utils / auth.js, helper.js
+
+* views / layouts / main.handlebars
+
+* views / layouts / partials / create-post.handlebars, daycare.handlebars, edit-post.handlebars, homepage.handlebars, login.handlebars, review.handlebars, signup.handlebars, single-post.handlebars
+
+* package-lock.json, package.json, README.md, server.js 
 
 
 

@@ -52,7 +52,7 @@ _Along with it,we deployed our app through __Heroku__ web host andConfigured an 
  ## App Presentation
  The web app created can be run either from the server using __localhost:3001__ or through the heroku link. Once uploaded, the web page looks something like this.
   __Loading page__
-   ![image3](public/images/Screenshot(606).png)
+   ![image3](public/images/Screenshot (606).png)
    
    __Login and Signup Page__
     ![image3](public/images/Screenshot(604).png)

@@ -25,7 +25,10 @@ Working parents, especially a mother always finds it difficult to join back her 
    * All of this information is stored directly in our website for easy access.
    * We used a framework that was both easy-to use, but also responsive and optimize for the user’s experience.
    * We used Heroku web server to host our app and added a third party JAWS DB in order to display the seeded contents from the database.
-
+   * The steps involved in designing mainy dealt with designing the MVC code and using the MYSQL workbench to seed the necessary data. 
+   
+ ![image3](public/images/mvc.png)
+ ![image3](public/images/db.png)
 
  ## Layouts and Frameworks used
  1. __Libraries__ - In order to run the app, we installed alot of libraries, namely,
@@ -52,6 +55,7 @@ _Along with it,we deployed our app through __Heroku__ web host andConfigured an 
  
  ## App Presentation
  The web app created can be run either from the server using __localhost:3001__ or through the heroku link. Once uploaded, the web page looks something like this.
+ 
   __Loading page__
    ![image3](public/images/landing.png)
    
@@ -59,14 +63,27 @@ _Along with it,we deployed our app through __Heroku__ web host andConfigured an 
     ![image3](public/images/login.png)
     ![image3](public/images/signup.png)
     
-   __Login and Signup Page__
+   __Loggedin and Cities Displayed__
   
+  _Logged in_
+   ![image3](public/images/loggedin.png)
+   
+   _Cities Displayed_
+   
+   ![image3](public/images/c1.png)
+   ![image3](public/images/c2.png)
+   ![image3](public/images/c3.png)
+ 
+  __Reviews and Discussions Page__
+    ![image3](public/images/write.png)
+   ![image3](public/images/create.png)
+   
  
 
 
-  ## What can the app do?
- Here's a chart off all the functions that our web app is required to do
- ![image3](assets/images/chart.jpg)
+ ## What can the app do?
+This app can prove to be a one stop desitination for all the parents who are looking for food but affordable day care centers in their areas.For now, a user living in any of the six cities from our daabase can log in or signup with our app  and search for the top 10 day care centers. On clicking the chosen city, the user is provided with all the delated related to the day care centers in their areas, that includes their name, address, contact number,the age group of the child and the web link for the day care center that they want to browse. Not only this, if the use has any questions or even if they want to have a general discussion about the centers,he can go to the reviews section and enter a comment or start a new discussion. Our database consists ofalmost day care providers from accross the country. which gives the user a good range for deciding a day care that fits in their budget and is kids friendly as well.
+
 
  
  ## Deployment
@@ -75,9 +92,8 @@ _Along with it,we deployed our app through __Heroku__ web host andConfigured an 
    *  [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://toddlertown-cu.herokuapp.com/)
 
 
-    
-   
-   ## Credits
+
+  ## Credits
     The project has been assigned by the Carleton University Coding Bootcamp, our instructor and the TA's
    
      

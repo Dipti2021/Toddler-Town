@@ -77,15 +77,16 @@ _Along with it,we deployed our app through __Heroku__ web host andConfigured an 
    ![image3](public/images/c2.png)
    ![image3](public/images/c3.png)
  
-  __Reviews and Discussions Page__
-    ![image3](public/images/write.png)
+  __Reviews, Discussions and Editing Comments Page__
+   ![image3](public/images/write.png)
    ![image3](public/images/create.png)
+   ![image3](public/images/edit.png)
    
  
 
 
  ## What can the app do?
-This app can prove to be a one stop desitination for all the parents who are looking for food but affordable day care centers in their areas.For now, a user living in any of the six cities from our daabase can log in or signup with our app  and search for the top 10 day care centers. On clicking the chosen city, the user is provided with all the delated related to the day care centers in their areas, that includes their name, address, contact number,the age group of the child and the web link for the day care center that they want to browse. Not only this, if the use has any questions or even if they want to have a general discussion about the centers,he can go to the reviews section and enter a comment or start a new discussion. Our database consists ofalmost day care providers from accross the country. which gives the user a good range for deciding a day care that fits in their budget and is kids friendly as well.
+This app can prove to be a one stop desitination for all the parents who are looking for food but affordable day care centers in their areas.For now, a user living in any of the six cities from our daabase can log in or signup with our app  and search for the top 10 day care centers. On clicking the chosen city, the user is provided with all the delated related to the day care centers in their areas, that includes their name, address, contact number,the age group of the child and the web link for the day care center that they want to browse. Not only this, if the use has any questions or even if they want to have a general discussion about the centers,he can go to the reviews section and enter a comment or start a new discussion. If you thOur database consists of almost day care providers from accross the country which gives the user a good range for deciding a day care that fits in their budget and is kids friendly as well.
 
 
  

@@ -1,7 +1,9 @@
 const router = require('express').Router();
 const { Daycare, Review } = require('../models');
-const Agegroup = require('../models/Agegroup');
 const withAuth = require('../utils/auth');
+const Agegroup = require('../models/Agegroup');
+
+
 
 // GET all galleries for homepage
 router.get("/", async (req, res) => {
@@ -15,7 +17,7 @@ router.get("/", async (req, res) => {
         citiesArr.map((item) => [JSON.stringify(item), item])
       ).values(),
     ];
-    console.log(cities);
+    console.log("cities", cities);
     res.render("homepage", {
       cities,
       loggedIn: req.session.loggedIn,
@@ -25,6 +27,26 @@ router.get("/", async (req, res) => {
     res.status(500).json(err);
   }
 });
+
+router.get('/login', (req, res) => {
+  if (req.session.loggedIn) {
+    res.redirect('/');
+    return;
+  }
+  res.render('login');
+});
+
+
+router.get('/signup', (req, res) => {
+  if (req.session.loggedIn) {
+    res.redirect('/');
+    return;
+  }
+
+  res.render('signup');
+});
+
+// removed withAuth
 router.get("/daycare/:city", withAuth, async (req, res) => {
   try {
     const dbDaycareData = await Daycare.findAll({
@@ -36,7 +58,7 @@ router.get("/daycare/:city", withAuth, async (req, res) => {
     const daycares = dbDaycareData.map((daycare) =>
       daycare.get({ plain: true })
     );
-    console.log(daycares);
+    console.log("daycares", daycares);
     res.render("daycare", {
       daycares,
       loggedIn: true,
@@ -61,3 +83,4 @@ router.get("/signup", (req, res) => {
   res.render("signup");
 });
 module.exports = router;
+

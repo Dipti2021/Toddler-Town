@@ -10,9 +10,10 @@
 ## Table of Contents
 * [Introduction](#introduction)
 * [Design Process](#design)
-* [API's and Frameworks used](#api)
-* [Installations](#installations)
+* [Layouts and Frameworks used](#api)
+* [App Presentation](#details)
 * [What can the app do?](#details)
+* [Deployment](#installations)
 * [Credits](#credits)
  
  ## Introduction 
@@ -24,23 +25,48 @@ Working parents, especially a mother always finds it difficult to join back her 
    * All of this information is stored directly in our website for easy access.
    * We used a framework that was both easy-to use, but also responsive and optimize for the user’s experience.
    * We used Heroku web server to host our app and added a third party JAWS DB in order to display the seeded contents from the database.
-![image](https://user-images.githubusercontent.com/77368913/120906175-3f1eba00-c625-11eb-9fdf-2cf27ee6df2c.png)
-
- ## API's and Frameworks used
- | YOUTUBE  | WIKISEARCH  | BULMA  | FONTAWESOME 
-|---|---|---|--
-| Used to search for videos matching specific search terms,topics and instrument.Library used to install it : You tube Data API V3  | The API allows access to some wiki-features like authentication, page operations, and helps to search the history related  to any global instrument.|An open source framework that provided ready-to-use frontend components that  can easily be combined to build  our responsive web interfaces. | Used to add font icons to your website that works well on any screen size
 
 
+ ## Layouts and Frameworks used
+ 1. __Libraries__ - In order to run the app, we installed alot of libraries, namely,
+   * npm install sequelize
+   * npm install dotenv
+   * npm install mysql2
+   * npm install express
+   * npm install express-handlebars
+   * npm install bcrypt
+   * npm install express-session
+ 2. __Frameworks__ : We used the following frameworks to obtain font icons for our website and ready-to-use front-end components!
+   * Font Awesome
+   * Bulma
+ 3. __Database__: We used it in order to create our input and seed it into our web app
+    * My SQL
+ 4. __Frontend, Backend and Styling__ : For this app, we skipped the html layout for our front end and used the normal styling techniches that has been used till now
+   * Handlebars
+   * CSS3
+   * JavaScript
 
- ## Installations
-   * [The URL of the Github repo](https://github.com/Dipti2021/BCS-Project-1)
-   * [The URL of the deployed application](https://dipti2021.github.io/BCS-Project-1/)
+_Along with it,we deployed our app through __Heroku__ web host andConfigured an additional add on __JAWS DB__ in order to relate our code and database.
+
  
- ## What can the app do?
+ ## App Presentation
+ The web app created can be run either from the server using __localhost:3001__ or through the heroku link. Once uploaded, the web page looks something like this.
+  __Loading page__
+   ![image3](public/images/Screenshot(604).png)
+  
+ 
+
+
+  ## What can the app do?
  Here's a chart off all the functions that our web app is required to do
  ![image3](assets/images/chart.jpg)
+
  
+ ## Deployment
+  The app has been deployed on GITHUB, where all the codes are visible, and the working web app has been deployed on heroku
+   * [The URL of the Github repo](https://github.com/Dipti2021/Toddler-Town)
+   *  [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://notetakerdr.herokuapp.com/)
+
 
     
    

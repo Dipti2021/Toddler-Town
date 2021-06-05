@@ -60,8 +60,8 @@ _Along with it,we deployed our app through __Heroku__ web host andConfigured an 
    ![image3](public/images/landing.png)
    
    __Login and Signup Page__
-    ![image3](public/images/login.png)
-    ![image3](public/images/signup.png)
+   ![image3](public/images/login.png)
+   ![image3](public/images/signup.png)
     
    __Loggedin and Cities Displayed__
   

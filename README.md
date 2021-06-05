@@ -40,22 +40,26 @@ Working parents, especially a mother always finds it difficult to join back her 
    * Font Awesome
    * Bulma
  3. __Database__: We used it in order to create our input and seed it into our web app
+ 
     * My SQL
  4. __Frontend, Backend and Styling__ : For this app, we skipped the html layout for our front end and used the normal styling techniches that has been used till now
    * Handlebars
    * CSS3
    * JavaScript
 
-_Along with it,we deployed our app through __Heroku__ web host andConfigured an additional add on __JAWS DB__ in order to relate our code and database.
+_Along with it,we deployed our app through __Heroku__ web host andConfigured an additional add on __JAWS DB__ in order to relate our code and database._
 
  
  ## App Presentation
  The web app created can be run either from the server using __localhost:3001__ or through the heroku link. Once uploaded, the web page looks something like this.
   __Loading page__
-   ![image3](Toddler-Town/public/images/Screenshot (606).png)
+   ![image3](public/images/landing.png)
    
    __Login and Signup Page__
-    ![image3](public/images/Screenshot(604).png)
+    ![image3](public/images/login.png)
+    ![image3](public/images/signup.png)
+    
+   __Login and Signup Page__
   
  
 
@@ -68,7 +72,7 @@ _Along with it,we deployed our app through __Heroku__ web host andConfigured an 
  ## Deployment
   The app has been deployed on GITHUB, where all the codes are visible, and the working web app has been deployed on heroku
    * [The URL of the Github repo](https://github.com/Dipti2021/Toddler-Town)
-   *  [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://notetakerdr.herokuapp.com/)
+   *  [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://toddlertown-cu.herokuapp.com/)
 
 
     

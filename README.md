@@ -1,5 +1,11 @@
-# Group 2 project: Day care finder application 
-# Members: Isaac Akanbi, Dipti Razdan, Ayomide Awonaya, Evrard Ndanga 
+# Toddler Town 
+![License: Dipti](https://img.shields.io/badge/Coder-Dipti'sCode-yellow.svg)
+![License: GPL v3](https://img.shields.io/badge/License-MIT-pink.svg)
+![Project:no](https://img.shields.io/badge/db-Sequelize-red.svg)
+![Project:no](https://img.shields.io/badge/app-FullStack-green.svg)
+![Project:no](https://img.shields.io/badge/Frontend-HandleBars-blue.svg)
+![Project:no](https://img.shields.io/badge/Styling-Bulma-purple.svg)
+![Project:no](https://img.shields.io/badge/Backend-JavaScript-orange.svg)
 
 <img width="1060" alt="Screen Shot 2021-06-05 at 12 20 12 PM" src="https://user-images.githubusercontent.com/78707812/120898651-c81ffc00-c5f9-11eb-9842-cf26470a4439.png">
 

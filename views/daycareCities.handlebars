@@ -1,0 +1,35 @@
+
+<section class="hero is-success is-fullheight">
+   <nav class="navbar mt-2">
+          
+            <a href="/" id="home"class="navbar-item is-hoverable pt-1"><i class="fas fa-home"></i> Home</a> 
+            <a href="/review" id="review1" color="blue"class="navbar-item is-hoverable pt-1"><i class="fas fa-comments"></i> Review</a> 
+            <a id="logout1" href="#" class="navbar-item is-hoverable pt-1"></i> Logout</a>
+    </nav>
+  <div class="container">
+   
+      <div class="section">
+        <div class="columns">
+          <div class="column has-text-centered">
+            <h1 class="title" style="color: black;">Your search ends here</h1><br>
+          </div>
+        </div>
+        <div class="daycare">
+        {{#each cities as |city|}}
+        <section class="card" id ="card">
+          <a href="/daycare/{{city.city}}">
+            <header id="title">{{city.city}}</header>
+             <img src="/images/{{city.city}}.jpg" alt="{{city.city}}">
+          </a>
+        </section>
+        {{/each}}
+
+      </div>  
+    </div>
+  </div> 
+</section>  
+<script>
+    document.getElementById("wrapper").style.display="none";
+    document.getElementById("main").style.display="block";
+  </script>
+

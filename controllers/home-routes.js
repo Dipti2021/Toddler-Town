@@ -5,8 +5,8 @@ const Agegroup = require('../models/Agegroup');
 
 
 
-// GET all galleries for homepage
-router.get("/", async (req, res) => {
+// GET all Daycares's cities
+router.get("/daycare", async (req, res) => {
   try {
     const dbDaycareData = await Daycare.findAll({
       attributes: ["city"],
@@ -18,8 +18,21 @@ router.get("/", async (req, res) => {
       ).values(),
     ];
     console.log("cities", cities);
-    res.render("homepage", {
+    res.render("daycareCities", {
       cities,
+      loggedIn: req.session.loggedIn,
+    });
+  } catch (err) {
+    console.log(err);
+    res.status(500).json(err);
+  }
+});
+
+router.get("/", async (req, res) => {
+  try {
+    
+        res.render("homepage", {
+     
       loggedIn: req.session.loggedIn,
     });
   } catch (err) {
@@ -46,7 +59,7 @@ router.get('/signup', (req, res) => {
   res.render('signup');
 });
 
-// removed withAuth
+
 router.get("/daycare/:city", withAuth, async (req, res) => {
   try {
     const dbDaycareData = await Daycare.findAll({

@@ -83,6 +83,7 @@
   nav {
     display: flex;
     
+      
   }
   
   nav a {
@@ -253,3 +254,9 @@
       td a {
         word-break: break-word;
       }
+
+      #daycare1 ,#review1,#home , #logout1{
+        color: rgb(61, 61, 122);
+      }
+      
+            

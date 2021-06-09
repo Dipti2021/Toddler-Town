@@ -13,3 +13,6 @@ async function logout() {
   }
   
   document.querySelector('#logout').addEventListener('click', logout);
+  document.querySelector('#logout1').addEventListener('click', logout);
+ // document.querySelector('#logout2').addEventListener('click', logout);
+  
